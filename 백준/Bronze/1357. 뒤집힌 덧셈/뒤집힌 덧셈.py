@@ -1,0 +1,7 @@
+X,Y=map(str,input().split())
+X=''.join(reversed(X))
+Y=''.join(reversed(Y))
+sum=int(X)+int(Y)
+sum=str(sum)
+sum=''.join(reversed(sum))
+print(int(sum))

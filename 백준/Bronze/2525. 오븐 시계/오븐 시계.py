@@ -1,0 +1,12 @@
+M,S=map(int,input().split())
+p=int(input())
+S=S+p
+if(S>=60):
+    P=S//60
+    M+=P
+    S%=60
+if(M>24):
+    M=M%24
+elif(M%24==0):
+    M=0
+print(M,S)
