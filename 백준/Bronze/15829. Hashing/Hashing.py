@@ -1,9 +1,7 @@
-lst=[0,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-N= int(input())
-M= input()
-result=0
-cnt=0
-for i in range(len(M)):
-    result+=lst.index(M[i])*31**cnt
-    cnt+=1
-print(result)
+L = int(input())
+string = input()
+answer = 0
+
+for i in range(L):
+    answer += (ord(string[i])-96) * (31 ** i) #아스키 코드 값을 돌려주는 ord함수
+print(answer % 1234567891)
