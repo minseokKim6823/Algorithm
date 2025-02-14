@@ -19,6 +19,5 @@ def solution(data, ext, val_ext, sort_by):
     for i in range(len(data)):
         if data[i][value1]<=val_ext:
             answer.append(data[i])
-    if len(answer)==0:
-        answer=[[]]
+ 
     return answer
